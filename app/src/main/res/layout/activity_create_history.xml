@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qrgenerator.activity_create_history"
+    android:background="@color/background_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="8dp">
+
+                        <ImageView
+                            android:id="@+id/back_Create"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_back">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center|start"
+                            android:text="QR History"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"/>
+
+
+
+                </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recyclerview_create"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="10">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
